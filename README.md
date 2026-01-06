@@ -21,21 +21,44 @@ git push                # push the new commit to the remote repo
 
 Imagine you are teaching a brand new programmer a brief lesson about functions and function calls. Your lesson should have the following components:
 
-* A technical definition ("According to MDN, a function is...").
-* An explanation of the concept with an analogy ("You can think of a function a ...")
-* An example of the syntax for an arrow function using a JavaScript code block (triple backticks)
-* An explanation of the syntax using the terms **arrow function**, **parameter**, **code block**, **return statement**, and **call/invoke**.
+- A technical definition ("According to MDN, a function is...").
+- An explanation of the concept with an analogy ("You can think of a function a ...")
+- An example of the syntax for an arrow function using a JavaScript code block (triple backticks)
+- An explanation of the syntax using the terms **arrow function**, **parameter**, **code block**, **return statement**, and **call/invoke**.
 
 Below, we've provided an outline for your response but feel free to modify it as you see fit.
 
 ### Response
 
-[Replace with your explanation of the concept with an analogy]
+**Technical definition**
+
+According to MDN, a **function** is a reusable block of code that is designed to do one specific task and runs when it is called (invoked).
+
+**Analogy**
+
+I think of a function like a vending machine. You press some buttons (give it inputs), it does its thing inside, and then it gives you a snack (an output). You don’t need to know everything happening inside—just how to use it.
 
 Check out this example:
 
 ```js
-// Add your example here
+// An arrow function that multiplies two numbers
+const multiply = (x, y) => {
+  return x * y;
+};
+
+// Calling the function
+const answer = multiply(4, 5);
+console.log(answer); // 20
 ```
 
-[Replace with your explanation of the example and explanation of the syntax]
+**Explanation of the example and syntax**
+
+This example uses an **arrow function**, which is a shorter way to write a function in JavaScript. The function is called `multiply`.
+
+The values inside the parentheses `(x, y)` are called **parameters**. They represent the numbers that will be used when the function runs.
+
+The curly braces `{}` are the **code block**, and they hold the code that runs when the function is called. Inside the code block, there is a **return statement**, which sends the result (`x * y`) back to where the function was used.
+
+When we **call/invoke** the function using `multiply(4, 5)`, the numbers `4` and `5` are passed into the parameters, the code runs, and the function returns `20`.
+
+Basically, functions help us avoid repeating code and make our programs easier to read and use.
